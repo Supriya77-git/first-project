@@ -24,5 +24,6 @@ public static void main(String[] args) throws InterruptedException {
 	driver.findElement(By.id("customerPanel_deleteConfirm_submitTitle")).click();
 	String text = driver.findElement(By.className("innerHtml")).getText();
 	System.out.println(text);
+	driver.quit();
 }
 }
